@@ -134,7 +134,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.618fr) minmax(280px, 1fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(480px, 0.88fr);
   grid-template-areas:
     "copy media";
   align-items: end;
@@ -252,13 +252,14 @@ h3 {
 .hero-media {
   grid-area: media;
   align-self: center;
-  max-width: 466px;
+  width: clamp(355px, 25.5vw, 490px);
+  max-width: 100%;
   justify-self: center;
 }
 
 .hero-media img {
   aspect-ratio: 1;
-  width: min(100%, 466px);
+  width: 100%;
   object-fit: cover;
   object-position: center top;
   border: var(--space-xs) solid rgba(183, 215, 191, 0.92);
