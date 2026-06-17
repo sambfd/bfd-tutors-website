@@ -252,13 +252,13 @@ h3 {
 .hero-media {
   grid-area: media;
   align-self: center;
-  max-width: 377px;
+  max-width: 466px;
   justify-self: center;
 }
 
 .hero-media img {
   aspect-ratio: 1;
-  width: min(100%, 377px);
+  width: min(100%, 466px);
   object-fit: cover;
   object-position: center top;
   border: var(--space-xs) solid rgba(183, 215, 191, 0.92);
